@@ -23,7 +23,7 @@
     border-radius: 40px;
     width: 400px;
     background:transparent;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(10px);
     /* background-color: rgb(209, 14, 196); */
     box-shadow: 3px 5px 5px 2px black;
     /* height: 500px; */
@@ -37,7 +37,7 @@
     width: 100%;
     height: 100%;
     content: "";
-    background-color: rgba(241, 241, 241, 0.144);
+    background-color: rgba(0, 0, 0, 0.222);
 }
 .player_cont h2,.player_cont h5 {
     text-align: center;
@@ -75,22 +75,28 @@
     width: 60px;
     border:2px solid var(--ternary);
     background:transparent;
-    color: var(--ternary);
-    font-size: 16px;
+    color: rgba(255, 255, 255, 0.96);
+    font-size: 19px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .audio_controls .btn_play:hover{
     transition: .3s all ease-in-out;
     border: 1px solid var(--secondary);
-    background-color: rgba(237, 60, 237, 0.96);
+    background-color: rgb(255, 0, 221);
     color: var(--ternary);
 
 }
 .btn_next, .btn_prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid black;
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     border: 2px solid var(--ternary);
     background: transparent;

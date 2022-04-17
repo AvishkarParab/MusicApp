@@ -7,32 +7,46 @@
     <title>ADD SONG</title>
     <link rel="stylesheet" href="./css/homestyle.css">
 </head>
-<header>
-    <nav>
-        <h2><a href="./homepage.html">Music App</a></h2>
-        <ul>
-            <li><a href="./addsong.html">Add Song</a></li>
-            <li><a href="./musicplayer.html">Music Player</a></li>
-            <li><a href="./searchlyrics.html">Search Lyrics</a></li>
-            <li><a href="./index.html">Logout</a></li>
-        </ul>
-    </nav>
-</header>
 <body>
+    <header>
+        <nav>
+            <h2><a href="./homepage.html">Music App</a></h2>
+            <ul>
+                <li><a href="./addsong.html" class="active">Add Song</a></li>
+                <li><a href="./musicplayer.html">Music Player</a></li>
+                <li><a href="./searchlyrics.html">Search Lyrics</a></li>
+                <li><a href="./index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br>
    <div class="feild_cont">
         <form action="#">
             <input type="text" name="sname" id="sname" placeholder="Enter song name">
-            <button> Search </button>
+            <button> <i class="fa-solid fa-magnifying-glass"></i> </button>
         </form>
    </div>
    <div class="result">
         <h3>RESULTS</h3>
         <ul>
-            <li>Song 1</li>
-            <li>Song 2</li>
-            <li>Song 3</li>
-            <li>Song 4</li>
+            <li>
+                <h4>Song 1</h4>
+                <button class="addbtn"><i class="fa-solid fa-plus"></i></button>
+            </li>
+            <li>
+                <h4>Song 2</h4>
+                <button class="addbtn"><i class="fa-solid fa-plus"></i></button>
+            </li>
+            <li>
+                <h4>Song 3</h4>
+                <button class="addbtn"><i class="fa-solid fa-plus"></i></button>
+            </li>
+            <li>
+                <h4>Song 4</h4>
+                <button class="addbtn"><i class="fa-solid fa-plus"></i></button>
+            </li>
         </ul>
    </div>
 </body>
+<script src="https://kit.fontawesome.com/36fe686b6f.js" crossorigin="anonymous"></script>
 </html>
