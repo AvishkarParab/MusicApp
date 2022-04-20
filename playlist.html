@@ -36,5 +36,11 @@
         </ul>
     </div>
 </body>
+<script>
+    console.log(window.location.search.substring(1));
+    const playname = document.getElementsByClassName("playname");
+    playname[0].innerHTML = window.location.search.substring(1);
+
+</script>
 <script src="https://kit.fontawesome.com/36fe686b6f.js" crossorigin="anonymous"></script>
 </html>

@@ -28,15 +28,15 @@
             <ul class="playlist" style="list-style: none;">
                 <li>
                     <img src="./images/headphone.jpg" alt="">
-                    <h3><a href="./playlist.html">Playlist 1</a></h3>
+                    <h3>Playlist1</h3>
                 </li>
                 <li>
                     <img src="./images/headphone.jpg" alt="">
-                    <h3>Playlist 2</h3>
+                    <h3>Playlist2</h3>
                 </li>
                 <li>
                     <img src="./images/headphone.jpg" alt="">
-                    <h3>Playlist 3</h3>
+                    <h3>Playlist3</h3>
                 </li>
             </ul>
         </div>
@@ -47,8 +47,11 @@
 </html>
 
 <script>
-    // const playlist = document.querySelector(".playlist li");
-    // playlist.onclick = () =>{
-
-    // }
+    const playlist = document.querySelectorAll(".playlist li");
+    playlist.forEach((ele) =>{
+        ele.onclick = () =>{
+            console.log(ele.innerText);
+            window.location.href = "/playlist.html" +`?${ele.innerText}`;
+        }
+    })
 </script>
